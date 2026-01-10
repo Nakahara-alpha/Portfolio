@@ -228,20 +228,22 @@ body {
 
 @media (max-width: 480px) {
   body {
-    background-image: url('4.jpg');  
+    background-color: #1a1a1a;
+    background-image: url('4.jpg');
     background-position: center;
+    background-attachment: scroll;
   }
   
   .navbar {
     flex-direction: column;
-    gap: 15px;
-    padding: 20px;
+    gap: 12px;
+    padding: 15px 20px;
   }
   
   .left-navbar {
     width: 100%;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
   }
   
   .right-navbar {
@@ -249,87 +251,127 @@ body {
   }
   
   .navbar-link {
-    font-size: 12px;
+    font-size: 13px;
+    padding: 8px 0;
   }
   
   .hero {
-    padding: 20px;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    padding: 30px 20px 50px 20px;
+    gap: 25px;
+  }
+  
+  .column {
+    gap: 25px;
   }
   
   .section {
-    padding: 20px;
+    padding: 25px 20px;
+    border-radius: 12px;
   }
   
   .section-title {
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 20px;
+    padding-bottom: 12px;
   }
   
   .skills-list {
-    gap: 15px;
+    gap: 20px;
+  }
+  
+  .skills-item {
+    gap: 10px;
   }
   
   .skills-name {
-    font-size: 13px;
+    font-size: 14px;
   }
   
   .skills-bar {
-    height: 6px;
+    height: 8px;
   }
   
-  .personal-skills,
-  .can-do-list p,
-  .design-skills p {
-    font-size: 13px;
+  .personal-skills {
+    font-size: 14px;
+    line-height: 1.9;
   }
   
   .timeline-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .timeline-item:last-child {
+    border-bottom: none;
   }
   
   .company-logo {
     width: 50px;
     height: 50px;
     font-size: 20px;
+    flex-shrink: 0;
+  }
+  
+  .timeline-content {
+    flex: 1;
   }
   
   .job-title {
-    font-size: 13px;
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 1.4;
   }
   
   .job-position {
-    font-size: 12px;
+    font-size: 13px;
+    margin-bottom: 5px;
   }
   
   .job-date {
-    font-size: 11px;
+    font-size: 12px;
   }
   
+
   .education-item h3 {
-    font-size: 13px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
   }
   
   .education-item p {
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  
+  .can-do-list p,
+  .design-skills p {
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 10px;
   }
   
   .hobbies-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 15px;
   }
   
   .hobby-item {
-    padding: 15px;
-    font-size: 11px;
+    padding: 20px 15px;
+    font-size: 13px;
+    line-height: 1.6;
   }
   
   .fullscreen-btn {
     bottom: 20px;
     right: 20px;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 8px;
   }
 }
+
